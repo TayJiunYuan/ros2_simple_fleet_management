@@ -142,7 +142,7 @@ class FleetManager(Node):
 			
 			elif len(self.goals) == 1: # both robots idle and only 1 goal, assign to closer robot (or robot1 if tie)
 				if self._manhattan(c1, robot1_sorted_goals[0]) > self._manhattan(c2, robot2_sorted_goals[0]):
-					assignments.append(("robot2", c1, robot1_sorted_goals[0]))
+					assignments.append(("robot2", c2, robot2_sorted_goals[0]))
 				else:
 					assignments.append(("robot1", c1, robot1_sorted_goals[0]))
 			elif len(self.goals) == 2: # both robots idle and 2 or more goals
