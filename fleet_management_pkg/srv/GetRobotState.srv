@@ -1,0 +1,8 @@
+# Request (empty)
+---
+int32 current_x
+int32 current_y
+int32 final_x
+int32 final_y
+
+
